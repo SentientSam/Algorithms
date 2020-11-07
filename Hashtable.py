@@ -2,6 +2,8 @@
 # Date    : 11/6/2020
 # Purpose : Playing around with dict hashtables and their uses, for fun
 
+# Future implementation of this file would be to read/write the table to/from a text file so that you could store
+# info like a database. Also the ability to delete hashes and make a menu setup for the app. 
 
 # Dict is an implementation of a hash table in python that can manage collisions
 # You can nest dictionaries inside other dictionaries
