@@ -19,7 +19,7 @@ graph["peggy"] = []
 # graph["bob"] = []
 graph["jane"] = []
 graph["jim"] = []
-graph["stephen"] = []
+# graph["stephen"] = []
 graph["annie"] = []
 graph["trevor"] = []
 graph["tim"] = []
@@ -28,8 +28,10 @@ graph["stephanie"] = []
 
 def person_is_tim(name):
   # print (name[-1])
+  # print(name)
   return name == "tim"
   # return True
+
 
 
 def search(name):
@@ -40,7 +42,7 @@ def search(name):
     person = search_queue.popleft()
     if not person in searched:
       if person_is_tim(person):
-        print (person + " is a seller!")
+        print (person + " is found!")
         # print ("Found!")
         return True
       else:
@@ -49,4 +51,6 @@ def search(name):
         # print(searched)
   return False
 
-search("you")
+if search("you") == False:
+  print("Tim was not found")
+# search("bob")
